@@ -14,6 +14,14 @@ Serpiente::Serpiente(string nombre){
 	puntuacion=0;
 }
 
+string Serpiente::getNombre(){
+	return nombre;
+}
+
+void Serpiente::setNombre(string nombre){
+	this->nombre=nombre;
+}
+
 int Serpiente::getPixels(){
 	return pixels;
 }
@@ -38,13 +46,13 @@ void Serpiente::setPuntuacion(int puntuacion){
 	this->puntuacion=puntuacion;
 }
 
-vector<string> Serpiente::getPosiciones(){
+/*vector<string> Serpiente::getPosiciones(){
 	return posiciones;
 }
 
 void Serpiente::setPosicion(string pos){
 	posiciones.push_back(pos);
-}
+}*/
 
 Serpiente::~Serpiente(){
 
