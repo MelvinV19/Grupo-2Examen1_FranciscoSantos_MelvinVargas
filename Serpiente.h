@@ -23,9 +23,9 @@ class Serpiente{
 		int getMovimientos();
 		void setMovimientos(int);
 		int getPuntuacion();
-		void setPuntacion(int);
-		vetor<string> getPosiciones();
-		void setPosicion();
+		void setPuntuacion(int);
+		vector<string> getPosiciones();
+		void setPosicion(string);
 
 		//Destructor
 		~Serpiente();
