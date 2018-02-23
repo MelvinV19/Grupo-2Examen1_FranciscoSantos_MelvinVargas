@@ -18,14 +18,16 @@ class Serpiente{
 		//Contructor
 		Serpiente();
 		Serpiente(string);
+		string getNombre();
+		void setNombre(string);
 		int getPixels();
 		void setPixels(int);
 		int getMovimientos();
 		void setMovimientos(int);
 		int getPuntuacion();
-		void setPuntacion(int);
-		vetor<string> getPosiciones();
-		void setPosicion();
+		void setPuntuacion(int);
+		//vector<string> getPosiciones();
+		//void setPosicion(string);
 
 		//Destructor
 		~Serpiente();

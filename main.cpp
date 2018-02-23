@@ -1,7 +1,7 @@
 #include <iostream>
 #include "ncurses.h"
 #include <string>
-#include "Serpiente.h"
+//#include "Serpiente.h"
 using namespace std;
 //funcion que crear el tablero
 string** crear(string**);
@@ -13,11 +13,11 @@ int main(){
 	string nombre;
 	cout<<"Ingrese el nombre del jugador: ";
 	cin>>nombre;
-	Serpiente* serpiente=new Serpiente(nombre);
+	//Serpiente* serpiente=new Serpiente(nombre);
 	initscr();
 	string** tablero=NULL;	
 	printw("Bienvenido al snake presione enter para jugar");
-	mvprintw(0,50,serpiente->getNombre());
+	//mvprintw(0,50,serpiente->getNombre());
 	int ch;
 	if((ch==getch())==10){
 		tablero=crear(tablero);
