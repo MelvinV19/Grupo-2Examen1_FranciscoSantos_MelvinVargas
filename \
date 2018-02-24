@@ -27,8 +27,6 @@ string** mover(string**);
 //metodo para muerte de la serpiente
 void muerte(string**);
 
-//metodo para ver que letra es
-void moversemanual();
 
 int main(){
 	string nombre;
@@ -50,7 +48,6 @@ int main(){
 	printw("\n");
 	imprimir(matriz);
 	refresh();
-	char x=getch();
 	for(int i=0;i<10;i++){
 		for(int j=0;j<10;j++){
 			if(matriz[i][j]=="@"){
@@ -72,11 +69,14 @@ int main(){
 		imprimir(matriz);
 		refresh();
 	}*/
-	clear();
-	refresh();
-	printw("Gracias por usar nuestro programa");
-	char y=getch();
-	refresh();
+
+
+	//para probar la muerte usamos la cabeza de la serpiente
+	matriz[0][0]="@";
+	//martiz[0][1]="@";
+	//matriz[9][0]="@";
+
+	//muerte(matriz);
 	endwin();
 
 	return 0;
@@ -120,17 +120,17 @@ void imprimir(string** matriz){
 	}
 }
 
-string** serp(string **matriz){
+/*string** serp(string **matriz){
 	matriz[2][2]="s";
 	matriz[2][3]="s";
 	matriz[2][4]="s";
 	matriz[2][5]="s";
 	matriz[2][6]="@";
 	return matriz;
-}
+}*/
 
 void muerte(string** matriz){
-	for(int i=0;i<10;i++){
+	/*for(int i=0;i<10;i++){
 		for(int j=0;j<10;j++){
 			if(i==0){
 				if(matriz[i][j]=="@"){
@@ -154,37 +154,7 @@ void muerte(string** matriz){
 			}
 
 		}
-	}
-}
-
-void moversemanual(){
-	char ch;
-	do{
-		ch=getch();
-		switch(ch){
-			case 'w':{
-						 printw("se movera hacia arriba");
-							
-		   
-					}
-				   break;
-			case 'a':{
-						 printw("se movera hacia la izquierda");
-		
-					 }
-					 break;
-			case 's':{
-						 printw("se movera hacia abajo");
-
-					 }
-					 break;
-			case 'd':{
-						 printw("se movera hacia la derecha");
-
-					 }
-					 break;
-		}
-	}while(ch!='q');
+	}*/
 }
 
 
